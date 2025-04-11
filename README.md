@@ -1,16 +1,39 @@
 # e_commerce_app
 
-A new Flutter project.
+# Cyber Linio - eCommerce App
 
-## Getting Started
+A Flutter-based eCommerce application showcasing products from FakeStoreAPI with features like product browsing, favorites management, and cart functionality.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Product List**: View a list of products with images, names, and prices
+- **Product Details**: Detailed view with large image, description, and pricing
+- **Favorites**: Add/remove products to favorites with persistent local storage
+- **Shopping Cart**: Add products to cart with quantity management
+- **Responsive UI**: Clean and responsive interface inspired by Figma design
+- **State Management**: BLoC pattern for product state and Cubit for favorites/cart
+- **Pull-to-Refresh**: Refresh product list on the home screen
+- **Error Handling**: Proper loading and error states for API calls
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tech Stack
+
+- **Flutter**: 3.19.5
+- **State Management**: BLoC + Cubit
+- **Local Storage**: SharedPreferences
+- **API**: FakeStoreAPI (https://fakestoreapi.com)
+- **Dependency Injection**: Built-in Flutter 
+
+## Architecture
+
+The app follows a layered architecture:
+
+lib/
+├── onBoarding
+│   ├── pages/
+│   │   ├── home_page.dart      
+│   │   ├── cart_page.dart       
+│   │   └── favorites_page.dart 
+│   │   └── profile_page.dart   
+│   └── widgets/
+│       ├── product_details.dart  
